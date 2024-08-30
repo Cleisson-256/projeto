@@ -40,6 +40,7 @@ body * {
 }
 #container {
   width: 360px;
+  max-width: 588px;
   /* border: 1px solid red;*/
   margin: 56px auto 0px; /*escreve em forma de relógio - em cima 56px, nas laterais auto, e embaixo 0px.
 Isso substitui essas outras formas de escrever:
@@ -162,4 +163,14 @@ footer {
   text-align: center;
   padding: 24px;
   font-size: 14px;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url:url(./assets/bg-desktop.jpg);
+  }
+  .light{
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
